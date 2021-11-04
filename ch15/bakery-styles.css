@@ -12,8 +12,6 @@ body {
   background-color: white;
   margin: 0;
 }
-
-/* link styles */
 a:link, a:visited { color: #DC6903; }
 a:focus, a:hover, a:active { color: #F9AB33; }
 
@@ -77,13 +75,16 @@ main img{
   float: left;
   margin: 0 1em 1em 0;
 }
-img [src*="bread"]{
-  shape-outside: circle(125px);
+p img.bread{
+  shape-outside: ellipse(130px 95px at 50% 50%);
 }
-img [src*="muffin"]{
-  margin-left:50px;
-  shape-outside: circle(110px);
+p img.muffin{
+  margin-left: 50px;
+  shape-outside: polygon(0px 0px, 197px 0px, 241px
+31px, 241px 68px, 226px 82px, 219px 131px, 250px
+142px, 250px 158px, 0px 158px);
 }
+/* link styles */
 h3 {
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -115,6 +116,11 @@ footer {
   text-align: center;
   font-size: .8em;
   padding: 1em;
+}
+#award {
+  position: absolute;
+  top: 30px;
+  left: 50px;
 }
 h2 {
   font-family: 'Stint Ultra Expanded', Geprgia, serif;
